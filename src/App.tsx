@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
         <div>
-            <h1>👀 {data.title}</h1>{' '}
-            <h2>✨ {data.id}</h2>{' '}
+            <h1>👀 {data.title}</h1>
+            <h2>✨ {data.id}</h2>
             <button onClick={changeRequest}>Change the request</button>
         </div>
     </div>
