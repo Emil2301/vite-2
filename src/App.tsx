@@ -5,7 +5,7 @@ import { useState } from 'react';
 function App() {
     const [random, setRandom] = useState(Math.floor( Math.random() * 9 ) + 1);
     const changeRequest = () => {
-        setRandom(Math.floor( Math.random() * 9 ) + 1);
+        setRandom(Math.floor( Math.random() * 99 ) + 1);
         refetch();
     }
     const { isLoading, error, data, refetch } = useQuery<boolean, Error, any>('repoData', () =>
